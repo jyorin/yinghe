@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOf监控台位节点 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <监控台位节点>
+    <标识>1</标识>
+    <控件标识>2</控件标识>
+    <链接地址>3</链接地址>
+    <位>0</位>
+    <读写状态>0</读写状态>
+  </监控台位节点>
+</ArrayOf监控台位节点>

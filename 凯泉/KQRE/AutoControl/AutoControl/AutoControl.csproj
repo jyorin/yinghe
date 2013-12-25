@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB8EFCED-45F5-4F89-97AE-D88ABA81D2F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoControl</RootNamespace>
+    <AssemblyName>AutoControl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Common, Version=9.0.40.362, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlClass\charText.cs" />
+    <Compile Include="ControlClass\charTextUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlClass\charTextUC.Designer.cs">
+      <DependentUpon>charTextUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlClass\comboBox.cs" />
+    <Compile Include="ControlClass\comboBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlClass\comboBoxUC.Designer.cs">
+      <DependentUpon>comboBoxUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlClass\NumericEdit.cs" />
+    <Compile Include="ControlClass\NumericEditUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlClass\NumericEditUC.Designer.cs">
+      <DependentUpon>NumericEditUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlClass\timeBox.cs" />
+    <Compile Include="ControlClass\timeBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlClass\timeBoxUC.Designer.cs">
+      <DependentUpon>timeBoxUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlElement.cs" />
+    <Compile Include="DBControl.cs" />
+    <Compile Include="FieldClass\charField.cs" />
+    <Compile Include="FieldClass\comboBoxField.cs" />
+    <Compile Include="FieldClass\NumericField.cs" />
+    <Compile Include="FieldClass\timeField.cs" />
+    <Compile Include="FieldElement.cs" />
+    <Compile Include="FormElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableElement.cs" />
+    <Compile Include="TheModel\BindData.cs" />
+    <Compile Include="TheModel\comBoxBD.cs" />
+    <Compile Include="TheModel\ControlFieldSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlFieldSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TheModel\MenuType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlClass\charTextUC.resx">
+      <DependentUpon>charTextUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlClass\comboBoxUC.resx">
+      <DependentUpon>comboBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlClass\NumericEditUC.resx">
+      <DependentUpon>NumericEditUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlClass\timeBoxUC.resx">
+      <DependentUpon>timeBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TheModel\ControlFieldSet.xsc">
+      <DependentUpon>ControlFieldSet.xsd</DependentUpon>
+    </None>
+    <None Include="TheModel\ControlFieldSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlFieldSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TheModel\ControlFieldSet.xss">
+      <DependentUpon>ControlFieldSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

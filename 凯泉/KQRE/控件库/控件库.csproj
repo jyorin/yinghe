@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0E5D385-659F-46EE-8F10-7C216F2CC088}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>控件库</RootNamespace>
+    <AssemblyName>控件库</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Common, Version=9.0.40.362, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Net, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=x86" />
+    <Reference Include="NationalInstruments.UI, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="控件状态\电路状态枚举.cs" />
+    <Compile Include="数字仪表\GraphicsExtension.cs" />
+    <Compile Include="数字仪表\HarrProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="数字仪表\上下限管理.cs" />
+    <Compile Include="数显区控件\数显仪表单体类.cs" />
+    <Compile Include="数显区控件\数显仪表集合.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="数显区控件\数显仪表集合.Designer.cs">
+      <DependentUpon>数显仪表集合.cs</DependentUpon>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph.designer.cs">
+      <DependentUpon>XYGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph_FuncPrivate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph_FuncPublic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph_PrivateParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="曲线控件\XYGraph_PublicParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="曲线控件\调整坐标轴.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="曲线控件\调整坐标轴.Designer.cs">
+      <DependentUpon>调整坐标轴.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单控件\瓦片.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="菜单控件\瓦片.Designer.cs">
+      <DependentUpon>瓦片.cs</DependentUpon>
+    </Compile>
+    <Compile Include="行列控件\CellLeftdown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="行列控件\CellLeftdown.Designer.cs">
+      <DependentUpon>CellLeftdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="行列控件\CellLefttop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="行列控件\CellLefttop.Designer.cs">
+      <DependentUpon>CellLefttop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="行列控件\CellRightdown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="行列控件\CellRightdown.Designer.cs">
+      <DependentUpon>CellRightdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="行列控件\CellRighttop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="行列控件\CellRighttop.Designer.cs">
+      <DependentUpon>CellRighttop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="表格控件\Grid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="表格控件\Grid.designer.cs">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="表格控件\SpeicalShow.cs" />
+    <Compile Include="采集控件\采集表格.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="采集控件\采集表格.Designer.cs">
+      <DependentUpon>采集表格.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目控制板\凯泉报表控制板.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目控制板\凯泉报表控制板.Designer.cs">
+      <DependentUpon>凯泉报表控制板.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数显区控件\数显仪表集合.resx">
+      <DependentUpon>数显仪表集合.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="曲线控件\XYGraph.resx">
+      <DependentUpon>XYGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="曲线控件\调整坐标轴.resx">
+      <DependentUpon>调整坐标轴.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单控件\瓦片.resx">
+      <DependentUpon>瓦片.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="行列控件\CellLeftdown.resx">
+      <DependentUpon>CellLeftdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="行列控件\CellLefttop.resx">
+      <DependentUpon>CellLefttop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="表格控件\Grid.resx">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采集控件\采集表格.resx">
+      <DependentUpon>采集表格.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目控制板\凯泉报表控制板.resx">
+      <DependentUpon>凯泉报表控制板.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GREEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\接触点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\接触点闭合.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\接触点横向.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\接触点横向闭合.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开关.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开关right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开关闭合.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开关闭合right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\变压器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\二代传感器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关开口上.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关开口上右合.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关开口上准备就绪.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关开口上左合.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关右合.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关准备就绪.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\闸刀开关左合.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\交流牵引机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\调压器.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\软启动器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上方向.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右方向.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左方向.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下方向.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\隔离器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\隔离器闭合.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_add24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_remove24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartDemoDateTimeGridAlignment.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartDemoScrollingAndZooming.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reflash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartDemoRegressionLine.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrosshairCursorControl.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Computer\Computer.csproj">
+      <Project>{2384C387-7130-413C-842D-5C8F192B9FC2}</Project>
+      <Name>Computer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\变频器控制\变频器控制.csproj">
+      <Project>{C4906F1C-C588-418A-A8B7-EF3594001C3C}</Project>
+      <Name>变频器控制</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\数据存储\数据存储.csproj">
+      <Project>{E4D272F5-DB54-477A-B855-2E79AF7BBBFC}</Project>
+      <Name>数据存储</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\辅助库\辅助库.csproj">
+      <Project>{3628317E-9F7A-4BFC-B4DA-0769C99BC2CD}</Project>
+      <Name>辅助库</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndUserRestrictions.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kuoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sudu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suoxiao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Exit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoCorrect.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_SaveScript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartDemoDateTimeScaleMode.Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

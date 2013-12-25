@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{666BDB75-5F9B-4F3C-A3F2-F8006BE7A8A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Common, Version=9.0.40.362, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="管理界面\保存振动噪声.cs" />
+    <Compile Include="管理界面\出口压力仪表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\出口压力仪表.Designer.cs">
+      <DependentUpon>出口压力仪表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\当前试验组.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\当前试验组.Designer.cs">
+      <DependentUpon>当前试验组.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\振动测量仪表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\振动测量仪表.Designer.cs">
+      <DependentUpon>振动测量仪表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\启动试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\启动试验.designer.cs">
+      <DependentUpon>启动试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\惰转试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\惰转试验.designer.cs">
+      <DependentUpon>惰转试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\水泵环境参数配置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\水泵环境参数配置.Designer.cs">
+      <DependentUpon>水泵环境参数配置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\温升试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\温升试验.Designer.cs">
+      <DependentUpon>温升试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\噪声试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\噪声试验.Designer.cs">
+      <DependentUpon>噪声试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\图片管理.cs" />
+    <Compile Include="管理界面\振动试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\振动试验.Designer.cs">
+      <DependentUpon>振动试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\汽蚀试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\汽蚀试验.Designer.cs">
+      <DependentUpon>汽蚀试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\性能试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\性能试验.Designer.cs">
+      <DependentUpon>性能试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\试验报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\试验报表.Designer.cs">
+      <DependentUpon>试验报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\试验图片.cs" />
+    <Compile Include="管理界面\试验组对比.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\试验组对比.Designer.cs">
+      <DependentUpon>试验组对比.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\运转试验.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\运转试验.Designer.cs">
+      <DependentUpon>运转试验.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\功率测量仪表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\功率测量仪表.Designer.cs">
+      <DependentUpon>功率测量仪表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\授权支持.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\授权支持.Designer.cs">
+      <DependentUpon>授权支持.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\授权管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\授权管理.Designer.cs">
+      <DependentUpon>授权管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\查看文档帮助.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\查看文档帮助.Designer.cs">
+      <DependentUpon>查看文档帮助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\水泵型号管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\水泵型号管理.Designer.cs">
+      <DependentUpon>水泵型号管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\水泵型号管理方案选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\水泵型号管理方案选择.Designer.cs">
+      <DependentUpon>水泵型号管理方案选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\流量仪表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\流量仪表.Designer.cs">
+      <DependentUpon>流量仪表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\液力耦合器.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\液力耦合器.Designer.cs">
+      <DependentUpon>液力耦合器.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\温度测量仪表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\温度测量仪表.Designer.cs">
+      <DependentUpon>温度测量仪表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\生成试验组.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\生成试验组.Designer.cs">
+      <DependentUpon>生成试验组.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\生成试验组方案选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\生成试验组方案选择.Designer.cs">
+      <DependentUpon>生成试验组方案选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\电机型号管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\电机型号管理.Designer.cs">
+      <DependentUpon>电机型号管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\电机型号管理方案选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\电机型号管理方案选择.Designer.cs">
+      <DependentUpon>电机型号管理方案选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\转速测量.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\转速测量.Designer.cs">
+      <DependentUpon>转速测量.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\软件注册.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\软件注册.designer.cs">
+      <DependentUpon>软件注册.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\进口压力仪表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\进口压力仪表.Designer.cs">
+      <DependentUpon>进口压力仪表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理界面\选择流量量程.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理界面\选择流量量程.Designer.cs">
+      <DependentUpon>选择流量量程.cs</DependentUpon>
+    </Compile>
+    <Compile Include="试验报表RPT\性能试验.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>性能试验.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="试验报表RPT\水泵报表%28中%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>水泵报表%28中%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\水泵报表%28英%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>水泵报表%28英%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\水泵报表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>水泵报表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\水泵报表1%28中%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>水泵报表1%28中%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\水泵报表1%28英%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>水泵报表1%28英%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\汽蚀报表%28中%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>汽蚀报表%28中%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\汽蚀报表%28英%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>汽蚀报表%28英%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="试验报表RPT\温升报表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>温升报表.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="管理界面\当前试验组.resx">
+      <DependentUpon>当前试验组.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\振动测量仪表.resx">
+      <DependentUpon>振动测量仪表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\启动试验.resx">
+      <DependentUpon>启动试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\惰转试验.resx">
+      <DependentUpon>惰转试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\水泵环境参数配置.resx">
+      <DependentUpon>水泵环境参数配置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\温升试验.resx">
+      <DependentUpon>温升试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\噪声试验.resx">
+      <DependentUpon>噪声试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\振动试验.resx">
+      <DependentUpon>振动试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\试验组对比.resx">
+      <DependentUpon>试验组对比.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\选择流量量程.resx">
+      <DependentUpon>选择流量量程.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\性能试验.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>性能试验.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\水泵报表%28中%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>水泵报表%28中%29.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\水泵报表%28英%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>水泵报表%28英%29.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\水泵报表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>水泵报表.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\水泵报表1%28中%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>水泵报表1%28中%29.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\水泵报表1%28英%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>水泵报表1%28英%29.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\汽蚀报表%28中%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>汽蚀报表%28中%29.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\汽蚀报表%28英%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>汽蚀报表%28英%29.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="试验报表RPT\温升报表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>温升报表.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Resources\kuoda.png" />
+    <None Include="Resources\Unlink.png" />
+    <None Include="Resources\Action_SaveScript.png" />
+    <None Include="Resources\Action_Inline_Edit.png" />
+    <None Include="Resources\kaiqiyoubiao.png" />
+    <Content Include="电参数配置\电参数配置文件.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\振动测量仪表表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\生成实验组.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\生成试验组方案.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZD013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\ZS011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验图片配置\噪声试验图片.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="试验图片配置\振动试验图片.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\惰转试验数显区配置.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\温升试验数显区配置.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\潜水泵性能试验数显区配置.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\启动试验数显区配置.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验表格配置\启动试验.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验表格配置\惰转试验.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验表格配置\标准泵性能试验.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验表格配置\汽蚀试验批次.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="试验表格配置\温升试验.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="附件\running.swf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="管理界面\出口压力仪表.resx">
+      <DependentUpon>出口压力仪表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\汽蚀试验.resx">
+      <DependentUpon>汽蚀试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\性能试验.resx">
+      <DependentUpon>性能试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\试验报表.resx">
+      <DependentUpon>试验报表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\运转试验.resx">
+      <DependentUpon>运转试验.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\功率测量仪表.resx">
+      <DependentUpon>功率测量仪表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\授权管理.resx">
+      <DependentUpon>授权管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\查看文档帮助.resx">
+      <DependentUpon>查看文档帮助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\水泵型号管理.resx">
+      <DependentUpon>水泵型号管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\水泵型号管理方案选择.resx">
+      <DependentUpon>水泵型号管理方案选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\流量仪表.resx">
+      <DependentUpon>流量仪表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\液力耦合器.resx">
+      <DependentUpon>液力耦合器.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\温度测量仪表.resx">
+      <DependentUpon>温度测量仪表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\生成试验组.resx">
+      <DependentUpon>生成试验组.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\生成试验组方案选择.resx">
+      <DependentUpon>生成试验组方案选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\电机型号管理.resx">
+      <DependentUpon>电机型号管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\电机型号管理方案选择.resx">
+      <DependentUpon>电机型号管理方案选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\转速测量.resx">
+      <DependentUpon>转速测量.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\软件注册.resx">
+      <DependentUpon>软件注册.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理界面\进口压力仪表.resx">
+      <DependentUpon>进口压力仪表.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="管理表格配置\出口压力仪表表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\功率测量仪表表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\水泵型号管理方案.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\水泵型号管理表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\流量仪表表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\液力耦合器表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\温度测量仪表表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\电机型号管理方案.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\电机型号管理表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\转速测量表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="管理表格配置\进口压力仪表表格.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\主界面数显区配置.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\凯泉项目控制板配置.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验数显配置\运转试验数显区配置.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="试验表格配置\潜水泵性能试验.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="试验表格配置\汽蚀试验.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="试验数显配置\汽蚀试验数显区配置.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="软件配置\SysConfig.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="试验曲线配置\性能试验曲线配置.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="试验曲线配置\起停与惰转试验曲线配置.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="附件\GB3216-2005回转动力泵水力性能验收试验.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="试验表格配置\运转试验.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnyWay数据源管理\AnyWay数据源管理.csproj">
+      <Project>{E34D719C-6CF0-4308-90B6-7A4BA2065C71}</Project>
+      <Name>AnyWay数据源管理</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoControl\AutoControl\AutoControl.csproj">
+      <Project>{AB8EFCED-45F5-4F89-97AE-D88ABA81D2F1}</Project>
+      <Name>AutoControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Computer\Computer.csproj">
+      <Project>{2384C387-7130-413C-842D-5C8F192B9FC2}</Project>
+      <Name>Computer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gather\Gather.csproj">
+      <Project>{BDB8ECA2-1169-4B11-8976-54B26A0ECE81}</Project>
+      <Name>Gather</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicApp\LogicApp.csproj">
+      <Project>{3B93CA25-1302-4524-A276-58BEC4AE7322}</Project>
+      <Name>LogicApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PLC数据源管理\PLC数据源管理.csproj">
+      <Project>{81B6A50E-DC9E-4539-934E-8FA50CC0E424}</Project>
+      <Name>PLC数据源管理</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\全局缓存\全局缓存.csproj">
+      <Project>{84B7F5C7-42AB-4EA6-9F4E-71EDF1E0D5A8}</Project>
+      <Name>全局缓存</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\控件库\控件库.csproj">
+      <Project>{D0E5D385-659F-46EE-8F10-7C216F2CC088}</Project>
+      <Name>控件库</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\数据存储\数据存储.csproj">
+      <Project>{E4D272F5-DB54-477A-B855-2E79AF7BBBFC}</Project>
+      <Name>数据存储</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\数据库操作库\数据库操作库.csproj">
+      <Project>{B9A1AAB7-3A01-496C-A2B7-477B7FA0225B}</Project>
+      <Name>数据库操作库</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\试验报表模型\试验报表模型.csproj">
+      <Project>{B1D9E752-6C04-46A1-8CE5-6184F107CFA1}</Project>
+      <Name>试验报表模型</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\辅助库\辅助库.csproj">
+      <Project>{3628317E-9F7A-4BFC-B4DA-0769C99BC2CD}</Project>
+      <Name>辅助库</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双吸泵.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

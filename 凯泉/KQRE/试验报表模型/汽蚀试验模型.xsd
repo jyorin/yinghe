@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="汽蚀试验模型" targetNamespace="http://tempuri.org/汽蚀试验模型.xsd" xmlns:mstns="http://tempuri.org/汽蚀试验模型.xsd" xmlns="http://tempuri.org/汽蚀试验模型.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="汽蚀试验模型" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="汽蚀试验模型" msprop:Generator_UserDSName="汽蚀试验模型">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="性能曲线表" msprop:Generator_TableClassName="性能曲线表DataTable" msprop:Generator_TableVarName="table性能曲线表" msprop:Generator_TablePropName="性能曲线表" msprop:Generator_RowDeletingName="性能曲线表RowDeleting" msprop:Generator_UserTableName="性能曲线表" msprop:Generator_RowChangingName="性能曲线表RowChanging" msprop:Generator_RowEvHandlerName="性能曲线表RowChangeEventHandler" msprop:Generator_RowDeletedName="性能曲线表RowDeleted" msprop:Generator_RowEvArgName="性能曲线表RowChangeEvent" msprop:Generator_RowChangedName="性能曲线表RowChanged" msprop:Generator_RowClassName="性能曲线表Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="性能试验图片信息" msprop:Generator_ColumnVarNameInTable="column性能试验图片信息" msprop:Generator_ColumnPropNameInRow="性能试验图片信息" msprop:Generator_ColumnPropNameInTable="性能试验图片信息Column" msprop:Generator_UserColumnName="性能试验图片信息" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="汽蚀试验图片信息" msprop:Generator_ColumnVarNameInTable="column汽蚀试验图片信息" msprop:Generator_ColumnPropNameInRow="汽蚀试验图片信息" msprop:Generator_ColumnPropNameInTable="汽蚀试验图片信息Column" msprop:Generator_UserColumnName="汽蚀试验图片信息" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="测试数据表" msprop:Generator_TableClassName="测试数据表DataTable" msprop:Generator_TableVarName="table测试数据表" msprop:Generator_TablePropName="测试数据表" msprop:Generator_RowDeletingName="测试数据表RowDeleting" msprop:Generator_UserTableName="测试数据表" msprop:Generator_RowChangingName="测试数据表RowChanging" msprop:Generator_RowEvHandlerName="测试数据表RowChangeEventHandler" msprop:Generator_RowDeletedName="测试数据表RowDeleted" msprop:Generator_RowEvArgName="测试数据表RowChangeEvent" msprop:Generator_RowChangedName="测试数据表RowChanged" msprop:Generator_RowClassName="测试数据表Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="流量" msprop:Generator_ColumnVarNameInTable="column流量" msprop:Generator_ColumnPropNameInRow="流量" msprop:Generator_ColumnPropNameInTable="流量Column" msprop:Generator_UserColumnName="流量" type="xs:string" minOccurs="0" />
+              <xs:element name="输入功率" msprop:Generator_ColumnVarNameInTable="column输入功率" msprop:Generator_ColumnPropNameInRow="输入功率" msprop:Generator_ColumnPropNameInTable="输入功率Column" msprop:Generator_UserColumnName="输入功率" type="xs:string" minOccurs="0" />
+              <xs:element name="转速" msprop:Generator_ColumnVarNameInTable="column转速" msprop:Generator_ColumnPropNameInRow="转速" msprop:Generator_ColumnPropNameInTable="转速Column" msprop:Generator_UserColumnName="转速" type="xs:string" minOccurs="0" />
+              <xs:element name="轴功率" msprop:Generator_ColumnVarNameInTable="column轴功率" msprop:Generator_ColumnPropNameInRow="轴功率" msprop:Generator_ColumnPropNameInTable="轴功率Column" msprop:Generator_UserColumnName="轴功率" type="xs:string" minOccurs="0" />
+              <xs:element name="出口压力" msprop:Generator_ColumnVarNameInTable="column出口压力" msprop:Generator_ColumnPropNameInRow="出口压力" msprop:Generator_ColumnPropNameInTable="出口压力Column" msprop:Generator_UserColumnName="出口压力" type="xs:string" minOccurs="0" />
+              <xs:element name="扬程" msprop:Generator_ColumnVarNameInTable="column扬程" msprop:Generator_ColumnPropNameInRow="扬程" msprop:Generator_ColumnPropNameInTable="扬程Column" msprop:Generator_UserColumnName="扬程" type="xs:string" minOccurs="0" />
+              <xs:element name="额定转速流量" msprop:Generator_ColumnVarNameInTable="column额定转速流量" msprop:Generator_ColumnPropNameInRow="额定转速流量" msprop:Generator_ColumnPropNameInTable="额定转速流量Column" msprop:Generator_UserColumnName="额定转速流量" type="xs:string" minOccurs="0" />
+              <xs:element name="额定转速扬程" msprop:Generator_ColumnVarNameInTable="column额定转速扬程" msprop:Generator_ColumnPropNameInRow="额定转速扬程" msprop:Generator_ColumnPropNameInTable="额定转速扬程Column" msprop:Generator_UserColumnName="额定转速扬程" type="xs:string" minOccurs="0" />
+              <xs:element name="额定转速轴功率" msprop:Generator_ColumnVarNameInTable="column额定转速轴功率" msprop:Generator_ColumnPropNameInRow="额定转速轴功率" msprop:Generator_ColumnPropNameInTable="额定转速轴功率Column" msprop:Generator_UserColumnName="额定转速轴功率" type="xs:string" minOccurs="0" />
+              <xs:element name="额定转速泵效率" msprop:Generator_ColumnVarNameInTable="column额定转速泵效率" msprop:Generator_ColumnPropNameInRow="额定转速泵效率" msprop:Generator_ColumnPropNameInTable="额定转速泵效率Column" msprop:Generator_UserColumnName="额定转速泵效率" type="xs:string" minOccurs="0" />
+              <xs:element name="电压" msprop:Generator_ColumnVarNameInTable="column电压" msprop:Generator_ColumnPropNameInRow="电压" msprop:Generator_ColumnPropNameInTable="电压Column" msprop:Generator_UserColumnName="电压" type="xs:string" minOccurs="0" />
+              <xs:element name="电流" msprop:Generator_ColumnVarNameInTable="column电流" msprop:Generator_ColumnPropNameInRow="电流" msprop:Generator_ColumnPropNameInTable="电流Column" msprop:Generator_UserColumnName="电流" type="xs:string" minOccurs="0" />
+              <xs:element name="序号" msprop:Generator_ColumnVarNameInTable="column序号" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnPropNameInTable="序号Column" msprop:Generator_UserColumnName="序号" type="xs:string" minOccurs="0" />
+              <xs:element name="进口压力" msprop:Generator_ColumnVarNameInTable="column进口压力" msprop:Generator_ColumnPropNameInRow="进口压力" msprop:Generator_ColumnPropNameInTable="进口压力Column" msprop:Generator_UserColumnName="进口压力" type="xs:string" minOccurs="0" />
+              <xs:element name="行状态" msprop:Generator_ColumnVarNameInTable="column行状态" msprop:Generator_ColumnPropNameInRow="行状态" msprop:Generator_ColumnPropNameInTable="行状态Column" msprop:Generator_UserColumnName="行状态" type="xs:string" minOccurs="0" />
+              <xs:element name="汽蚀余量" msprop:Generator_ColumnVarNameInTable="column汽蚀余量" msprop:Generator_ColumnPropNameInRow="汽蚀余量" msprop:Generator_ColumnPropNameInTable="汽蚀余量Column" msprop:Generator_UserColumnName="汽蚀余量" type="xs:string" minOccurs="0" />
+              <xs:element name="额定汽蚀余量" msprop:Generator_ColumnVarNameInTable="column额定汽蚀余量" msprop:Generator_ColumnPropNameInRow="额定汽蚀余量" msprop:Generator_ColumnPropNameInTable="额定汽蚀余量Column" msprop:Generator_UserColumnName="额定汽蚀余量" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="基础数据表" msprop:Generator_TableClassName="基础数据表DataTable" msprop:Generator_TableVarName="table基础数据表" msprop:Generator_TablePropName="基础数据表" msprop:Generator_RowDeletingName="基础数据表RowDeleting" msprop:Generator_UserTableName="基础数据表" msprop:Generator_RowChangingName="基础数据表RowChanging" msprop:Generator_RowEvHandlerName="基础数据表RowChangeEventHandler" msprop:Generator_RowDeletedName="基础数据表RowDeleted" msprop:Generator_RowEvArgName="基础数据表RowChangeEvent" msprop:Generator_RowChangedName="基础数据表RowChanged" msprop:Generator_RowClassName="基础数据表Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="型号规格" msprop:Generator_ColumnVarNameInTable="column型号规格" msprop:Generator_ColumnPropNameInRow="型号规格" msprop:Generator_ColumnPropNameInTable="型号规格Column" msprop:Generator_UserColumnName="型号规格" type="xs:string" minOccurs="0" />
+              <xs:element name="报告编号" msprop:Generator_ColumnVarNameInTable="column报告编号" msprop:Generator_ColumnPropNameInRow="报告编号" msprop:Generator_ColumnPropNameInTable="报告编号Column" msprop:Generator_UserColumnName="报告编号" type="xs:string" minOccurs="0" />
+              <xs:element name="试验地点" msprop:Generator_ColumnVarNameInTable="column试验地点" msprop:Generator_ColumnPropNameInRow="试验地点" msprop:Generator_ColumnPropNameInTable="试验地点Column" msprop:Generator_UserColumnName="试验地点" type="xs:string" minOccurs="0" />
+              <xs:element name="测试日期" msprop:Generator_ColumnVarNameInTable="column测试日期" msprop:Generator_ColumnPropNameInRow="测试日期" msprop:Generator_ColumnPropNameInTable="测试日期Column" msprop:Generator_UserColumnName="测试日期" type="xs:string" minOccurs="0" />
+              <xs:element name="室温" msprop:Generator_ColumnVarNameInTable="column室温" msprop:Generator_ColumnPropNameInRow="室温" msprop:Generator_ColumnPropNameInTable="室温Column" msprop:Generator_UserColumnName="室温" type="xs:string" minOccurs="0" />
+              <xs:element name="水温" msprop:Generator_ColumnVarNameInTable="column水温" msprop:Generator_ColumnPropNameInRow="水温" msprop:Generator_ColumnPropNameInTable="水温Column" msprop:Generator_UserColumnName="水温" type="xs:string" minOccurs="0" />
+              <xs:element name="气压" msprop:Generator_ColumnVarNameInTable="column气压" msprop:Generator_ColumnPropNameInRow="气压" msprop:Generator_ColumnPropNameInTable="气压Column" msprop:Generator_UserColumnName="气压" type="xs:string" minOccurs="0" />
+              <xs:element name="进扣表距" msprop:Generator_ColumnVarNameInTable="column进扣表距" msprop:Generator_ColumnPropNameInRow="进扣表距" msprop:Generator_ColumnPropNameInTable="进扣表距Column" msprop:Generator_UserColumnName="进扣表距" type="xs:string" minOccurs="0" />
+              <xs:element name="进口管径" msprop:Generator_ColumnVarNameInTable="column进口管径" msprop:Generator_ColumnPropNameInRow="进口管径" msprop:Generator_ColumnPropNameInTable="进口管径Column" msprop:Generator_UserColumnName="进口管径" type="xs:string" minOccurs="0" />
+              <xs:element name="出口管径" msprop:Generator_ColumnVarNameInTable="column出口管径" msprop:Generator_ColumnPropNameInRow="出口管径" msprop:Generator_ColumnPropNameInTable="出口管径Column" msprop:Generator_UserColumnName="出口管径" type="xs:string" minOccurs="0" />
+              <xs:element name="压力量程" msprop:Generator_ColumnVarNameInTable="column压力量程" msprop:Generator_ColumnPropNameInRow="压力量程" msprop:Generator_ColumnPropNameInTable="压力量程Column" msprop:Generator_UserColumnName="压力量程" type="xs:string" minOccurs="0" />
+              <xs:element name="流量范围" msprop:Generator_ColumnVarNameInTable="column流量范围" msprop:Generator_ColumnPropNameInRow="流量范围" msprop:Generator_ColumnPropNameInTable="流量范围Column" msprop:Generator_UserColumnName="流量范围" type="xs:string" minOccurs="0" />
+              <xs:element name="配用电机" msprop:Generator_ColumnVarNameInTable="column配用电机" msprop:Generator_ColumnPropNameInRow="配用电机" msprop:Generator_ColumnPropNameInTable="配用电机Column" msprop:Generator_UserColumnName="配用电机" type="xs:string" minOccurs="0" />
+              <xs:element name="规定转速" msprop:Generator_ColumnVarNameInTable="column规定转速" msprop:Generator_ColumnPropNameInRow="规定转速" msprop:Generator_ColumnPropNameInTable="规定转速Column" msprop:Generator_UserColumnName="规定转速" type="xs:string" minOccurs="0" />
+              <xs:element name="出口表距" msprop:Generator_ColumnVarNameInTable="column出口表距" msprop:Generator_ColumnPropNameInRow="出口表距" msprop:Generator_ColumnPropNameInTable="出口表距Column" msprop:Generator_UserColumnName="出口表距" type="xs:string" minOccurs="0" />
+              <xs:element name="保证值流量" msprop:Generator_ColumnVarNameInTable="column保证值流量" msprop:Generator_ColumnPropNameInRow="保证值流量" msprop:Generator_ColumnPropNameInTable="保证值流量Column" msprop:Generator_UserColumnName="保证值流量" type="xs:string" minOccurs="0" />
+              <xs:element name="保证值扬程" msprop:Generator_ColumnVarNameInTable="column保证值扬程" msprop:Generator_ColumnPropNameInRow="保证值扬程" msprop:Generator_ColumnPropNameInTable="保证值扬程Column" msprop:Generator_UserColumnName="保证值扬程" type="xs:string" minOccurs="0" />
+              <xs:element name="保证值转速" msprop:Generator_ColumnVarNameInTable="column保证值转速" msprop:Generator_ColumnPropNameInRow="保证值转速" msprop:Generator_ColumnPropNameInTable="保证值转速Column" msprop:Generator_UserColumnName="保证值转速" type="xs:string" minOccurs="0" />
+              <xs:element name="保证值泵输入功率" msprop:Generator_ColumnVarNameInTable="column保证值泵输入功率" msprop:Generator_ColumnPropNameInRow="保证值泵输入功率" msprop:Generator_ColumnPropNameInTable="保证值泵输入功率Column" msprop:Generator_UserColumnName="保证值泵输入功率" type="xs:string" minOccurs="0" />
+              <xs:element name="保证值泵效率" msprop:Generator_ColumnVarNameInTable="column保证值泵效率" msprop:Generator_ColumnPropNameInRow="保证值泵效率" msprop:Generator_ColumnPropNameInTable="保证值泵效率Column" msprop:Generator_UserColumnName="保证值泵效率" type="xs:string" minOccurs="0" />
+              <xs:element name="保证值汽蚀余量" msprop:Generator_ColumnVarNameInTable="column保证值汽蚀余量" msprop:Generator_ColumnPropNameInRow="保证值汽蚀余量" msprop:Generator_ColumnPropNameInTable="保证值汽蚀余量Column" msprop:Generator_UserColumnName="保证值汽蚀余量" type="xs:string" minOccurs="0" />
+              <xs:element name="电机制造厂家" msprop:Generator_ColumnVarNameInTable="column电机制造厂家" msprop:Generator_ColumnPropNameInRow="电机制造厂家" msprop:Generator_ColumnPropNameInTable="电机制造厂家Column" msprop:Generator_UserColumnName="电机制造厂家" type="xs:string" minOccurs="0" />
+              <xs:element name="电机型号" msprop:Generator_ColumnVarNameInTable="column电机型号" msprop:Generator_ColumnPropNameInRow="电机型号" msprop:Generator_ColumnPropNameInTable="电机型号Column" msprop:Generator_UserColumnName="电机型号" type="xs:string" minOccurs="0" />
+              <xs:element name="电机功率" msprop:Generator_ColumnVarNameInTable="column电机功率" msprop:Generator_ColumnPropNameInRow="电机功率" msprop:Generator_ColumnPropNameInTable="电机功率Column" msprop:Generator_UserColumnName="电机功率" type="xs:string" minOccurs="0" />
+              <xs:element name="电机电压" msprop:Generator_ColumnVarNameInTable="column电机电压" msprop:Generator_ColumnPropNameInRow="电机电压" msprop:Generator_ColumnPropNameInTable="电机电压Column" msprop:Generator_UserColumnName="电机电压" type="xs:string" minOccurs="0" />
+              <xs:element name="电机电流" msprop:Generator_ColumnVarNameInTable="column电机电流" msprop:Generator_ColumnPropNameInRow="电机电流" msprop:Generator_ColumnPropNameInTable="电机电流Column" msprop:Generator_UserColumnName="电机电流" type="xs:string" minOccurs="0" />
+              <xs:element name="流量仪表编号" msprop:Generator_ColumnVarNameInTable="column流量仪表编号" msprop:Generator_ColumnPropNameInRow="流量仪表编号" msprop:Generator_ColumnPropNameInTable="流量仪表编号Column" msprop:Generator_UserColumnName="流量仪表编号" type="xs:string" minOccurs="0" />
+              <xs:element name="流量仪表精度" msprop:Generator_ColumnVarNameInTable="column流量仪表精度" msprop:Generator_ColumnPropNameInRow="流量仪表精度" msprop:Generator_ColumnPropNameInTable="流量仪表精度Column" msprop:Generator_UserColumnName="流量仪表精度" type="xs:string" minOccurs="0" />
+              <xs:element name="流量仪表有效期" msprop:Generator_ColumnVarNameInTable="column流量仪表有效期" msprop:Generator_ColumnPropNameInRow="流量仪表有效期" msprop:Generator_ColumnPropNameInTable="流量仪表有效期Column" msprop:Generator_UserColumnName="流量仪表有效期" type="xs:string" minOccurs="0" />
+              <xs:element name="转速仪表编号" msprop:Generator_ColumnVarNameInTable="column转速仪表编号" msprop:Generator_ColumnPropNameInRow="转速仪表编号" msprop:Generator_ColumnPropNameInTable="转速仪表编号Column" msprop:Generator_UserColumnName="转速仪表编号" type="xs:string" minOccurs="0" />
+              <xs:element name="转速仪表精度" msprop:Generator_ColumnVarNameInTable="column转速仪表精度" msprop:Generator_ColumnPropNameInRow="转速仪表精度" msprop:Generator_ColumnPropNameInTable="转速仪表精度Column" msprop:Generator_UserColumnName="转速仪表精度" type="xs:string" minOccurs="0" />
+              <xs:element name="转速仪表有效期" msprop:Generator_ColumnVarNameInTable="column转速仪表有效期" msprop:Generator_ColumnPropNameInRow="转速仪表有效期" msprop:Generator_ColumnPropNameInTable="转速仪表有效期Column" msprop:Generator_UserColumnName="转速仪表有效期" type="xs:string" minOccurs="0" />
+              <xs:element name="入口压力仪表编号" msprop:Generator_ColumnVarNameInTable="column入口压力仪表编号" msprop:Generator_ColumnPropNameInRow="入口压力仪表编号" msprop:Generator_ColumnPropNameInTable="入口压力仪表编号Column" msprop:Generator_UserColumnName="入口压力仪表编号" type="xs:string" minOccurs="0" />
+              <xs:element name="入口压力仪表精度" msprop:Generator_ColumnVarNameInTable="column入口压力仪表精度" msprop:Generator_ColumnPropNameInRow="入口压力仪表精度" msprop:Generator_ColumnPropNameInTable="入口压力仪表精度Column" msprop:Generator_UserColumnName="入口压力仪表精度" type="xs:string" minOccurs="0" />
+              <xs:element name="入口压力仪表有效期" msprop:Generator_ColumnVarNameInTable="column入口压力仪表有效期" msprop:Generator_ColumnPropNameInRow="入口压力仪表有效期" msprop:Generator_ColumnPropNameInTable="入口压力仪表有效期Column" msprop:Generator_UserColumnName="入口压力仪表有效期" type="xs:string" minOccurs="0" />
+              <xs:element name="出口压力仪表编号" msprop:Generator_ColumnVarNameInTable="column出口压力仪表编号" msprop:Generator_ColumnPropNameInRow="出口压力仪表编号" msprop:Generator_ColumnPropNameInTable="出口压力仪表编号Column" msprop:Generator_UserColumnName="出口压力仪表编号" type="xs:string" minOccurs="0" />
+              <xs:element name="出口压力仪表精度" msprop:Generator_ColumnVarNameInTable="column出口压力仪表精度" msprop:Generator_ColumnPropNameInRow="出口压力仪表精度" msprop:Generator_ColumnPropNameInTable="出口压力仪表精度Column" msprop:Generator_UserColumnName="出口压力仪表精度" type="xs:string" minOccurs="0" />
+              <xs:element name="出口压力仪表有效期" msprop:Generator_ColumnVarNameInTable="column出口压力仪表有效期" msprop:Generator_ColumnPropNameInRow="出口压力仪表有效期" msprop:Generator_ColumnPropNameInTable="出口压力仪表有效期Column" msprop:Generator_UserColumnName="出口压力仪表有效期" type="xs:string" minOccurs="0" />
+              <xs:element name="输入功率仪表编号" msprop:Generator_ColumnVarNameInTable="column输入功率仪表编号" msprop:Generator_ColumnPropNameInRow="输入功率仪表编号" msprop:Generator_ColumnPropNameInTable="输入功率仪表编号Column" msprop:Generator_UserColumnName="输入功率仪表编号" type="xs:string" minOccurs="0" />
+              <xs:element name="输入功率仪表精度" msprop:Generator_ColumnVarNameInTable="column输入功率仪表精度" msprop:Generator_ColumnPropNameInRow="输入功率仪表精度" msprop:Generator_ColumnPropNameInTable="输入功率仪表精度Column" msprop:Generator_UserColumnName="输入功率仪表精度" type="xs:string" minOccurs="0" />
+              <xs:element name="输入功率仪表有效期" msprop:Generator_ColumnVarNameInTable="column输入功率仪表有效期" msprop:Generator_ColumnPropNameInRow="输入功率仪表有效期" msprop:Generator_ColumnPropNameInTable="输入功率仪表有效期Column" msprop:Generator_UserColumnName="输入功率仪表有效期" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

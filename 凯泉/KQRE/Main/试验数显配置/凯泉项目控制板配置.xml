@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<ArrayOf控制单元 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <控制单元>
+    <关联控件名>BTN_控制组1_正转</关联控件名>
+    <URL>URL1</URL>
+  </控制单元>
+  <控制单元>
+    <关联控件名>BTN_控制组1_反转</关联控件名>
+    <URL>URL2</URL>
+  </控制单元>
+  <控制单元>
+    <关联控件名>BTN_控制组2_正转</关联控件名>
+    <URL>URL3</URL>
+  </控制单元>
+  <控制单元>
+    <关联控件名>BTN_控制组2_反转</关联控件名>
+    <URL>URL4</URL>
+  </控制单元>
+  <控制单元>
+    <关联控件名>BTN_控制组1_步长</关联控件名>
+    <URL>URL5</URL>
+  </控制单元>
+  <控制单元>
+    <关联控件名>BTN_控制组2_步长</关联控件名>
+    <URL>URL6</URL>
+  </控制单元>
+  <控制单元>
+    <关联控件名>BTN_阀门</关联控件名>
+    <URL>URL7</URL>
+  </控制单元>
+</ArrayOf控制单元>

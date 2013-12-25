@@ -1,0 +1,13 @@
+流量_源数据,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.water folw_READ.num1
+进口压力_源数据,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.water pressure_READ.InputPre1
+出口压力_源数据,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.water pressure_READ.OutputPre1
+温度_源数据,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB1
+温度_源数据2,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB2
+温度_源数据3,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB3
+温度_源数据4,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB4
+温度_源数据5,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB5
+温度_源数据6,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB6
+温度_源数据7,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB7
+温度_源数据8,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Temp.1NUB8
+转速1_源数据,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Frequency measure.COUNT
+转速2_源数据,opc://localhost/National Instruments.NIOPCServers/kaiquan.kaiquan.Frequency measure.Frq

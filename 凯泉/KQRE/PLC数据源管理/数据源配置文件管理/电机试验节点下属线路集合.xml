@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOf电机试验节点下属线路集合 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <电机试验节点下属线路集合>
+    <节点标识>2KM</节点标识>
+    <节点下属线路标识集合>
+      <string>直线2KM_1</string>
+      <string>直线2KM_2</string>
+    </节点下属线路标识集合>
+  </电机试验节点下属线路集合>
+</ArrayOf电机试验节点下属线路集合>

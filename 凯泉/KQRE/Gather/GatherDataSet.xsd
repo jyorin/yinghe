@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GatherDataSet" targetNamespace="http://tempuri.org/GatherDataSet.xsd" xmlns:mstns="http://tempuri.org/GatherDataSet.xsd" xmlns="http://tempuri.org/GatherDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GatherDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GatherDataSet" msprop:Generator_UserDSName="GatherDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GatherTB" msprop:Generator_TableClassName="GatherTBDataTable" msprop:Generator_TableVarName="tableGatherTB" msprop:Generator_TablePropName="GatherTB" msprop:Generator_RowDeletingName="GatherTBRowDeleting" msprop:Generator_UserTableName="GatherTB" msprop:Generator_RowChangingName="GatherTBRowChanging" msprop:Generator_RowEvHandlerName="GatherTBRowChangeEventHandler" msprop:Generator_RowDeletedName="GatherTBRowDeleted" msprop:Generator_RowEvArgName="GatherTBRowChangeEvent" msprop:Generator_RowChangedName="GatherTBRowChanged" msprop:Generator_RowClassName="GatherTBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fieldName" msprop:Generator_ColumnVarNameInTable="columnfieldName" msprop:Generator_ColumnPropNameInRow="fieldName" msprop:Generator_ColumnPropNameInTable="fieldNameColumn" msprop:Generator_UserColumnName="fieldName" type="xs:string" minOccurs="0" />
+              <xs:element name="computerNo" msprop:Generator_ColumnVarNameInTable="columncomputerNo" msprop:Generator_ColumnPropNameInRow="computerNo" msprop:Generator_ColumnPropNameInTable="computerNoColumn" msprop:Generator_UserColumnName="computerNo" type="xs:string" minOccurs="0" />
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:string" minOccurs="0" />
+              <xs:element name="fieldDataType" msprop:Generator_ColumnVarNameInTable="columnfieldDataType" msprop:Generator_ColumnPropNameInRow="fieldDataType" msprop:Generator_ColumnPropNameInTable="fieldDataTypeColumn" msprop:Generator_UserColumnName="fieldDataType" type="xs:int" minOccurs="0" />
+              <xs:element name="fieldSourceType" msprop:Generator_ColumnVarNameInTable="columnfieldSourceType" msprop:Generator_ColumnPropNameInRow="fieldSourceType" msprop:Generator_ColumnPropNameInTable="fieldSourceTypeColumn" msprop:Generator_UserColumnName="fieldSourceType" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

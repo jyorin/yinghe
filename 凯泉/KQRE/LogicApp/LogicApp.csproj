@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B93CA25-1302-4524-A276-58BEC4AE7322}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LogicApp</RootNamespace>
+    <AssemblyName>LogicApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Common, Version=9.0.40.362, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=9.0.40.292, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="启停模块\启停Logic.cs" />
+    <Compile Include="曲线模块\启停惰转曲线.cs" />
+    <Compile Include="试验组模块\拷贝试验组.cs" />
+    <Compile Include="采集模块\GahterComputer.cs" />
+    <Compile Include="采集模块\GatherDBLogic.cs" />
+    <Compile Include="采集模块\GatherGroupLogic.cs" />
+    <Compile Include="采集模块\GatherItemLogic.cs" />
+    <Compile Include="采集模块\GatherLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnyWay数据源管理\AnyWay数据源管理.csproj">
+      <Project>{E34D719C-6CF0-4308-90B6-7A4BA2065C71}</Project>
+      <Name>AnyWay数据源管理</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoControl\AutoControl\AutoControl.csproj">
+      <Project>{AB8EFCED-45F5-4F89-97AE-D88ABA81D2F1}</Project>
+      <Name>AutoControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Computer\Computer.csproj">
+      <Project>{2384C387-7130-413C-842D-5C8F192B9FC2}</Project>
+      <Name>Computer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gather\Gather.csproj">
+      <Project>{BDB8ECA2-1169-4B11-8976-54B26A0ECE81}</Project>
+      <Name>Gather</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\全局缓存\全局缓存.csproj">
+      <Project>{84B7F5C7-42AB-4EA6-9F4E-71EDF1E0D5A8}</Project>
+      <Name>全局缓存</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\控件库\控件库.csproj">
+      <Project>{D0E5D385-659F-46EE-8F10-7C216F2CC088}</Project>
+      <Name>控件库</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\数据存储\数据存储.csproj">
+      <Project>{E4D272F5-DB54-477A-B855-2E79AF7BBBFC}</Project>
+      <Name>数据存储</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\数据库操作库\数据库操作库.csproj">
+      <Project>{B9A1AAB7-3A01-496C-A2B7-477B7FA0225B}</Project>
+      <Name>数据库操作库</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="电参数配置" targetNamespace="http://tempuri.org/电参数配置.xsd" xmlns:mstns="http://tempuri.org/电参数配置.xsd" xmlns="http://tempuri.org/电参数配置.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="电参数配置" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="电参数配置" msprop:Generator_UserDSName="电参数配置">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="电参数配置表" msprop:Generator_TableClassName="电参数配置表DataTable" msprop:Generator_TableVarName="table电参数配置表" msprop:Generator_TablePropName="电参数配置表" msprop:Generator_RowDeletingName="电参数配置表RowDeleting" msprop:Generator_UserTableName="电参数配置表" msprop:Generator_RowChangingName="电参数配置表RowChanging" msprop:Generator_RowEvHandlerName="电参数配置表RowChangeEventHandler" msprop:Generator_RowDeletedName="电参数配置表RowDeleted" msprop:Generator_RowEvArgName="电参数配置表RowChangeEvent" msprop:Generator_RowChangedName="电参数配置表RowChanged" msprop:Generator_RowClassName="电参数配置表Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KEY" msprop:Generator_ColumnVarNameInTable="columnKEY" msprop:Generator_ColumnPropNameInRow="KEY" msprop:Generator_ColumnPropNameInTable="KEYColumn" msprop:Generator_UserColumnName="KEY" type="xs:string" minOccurs="0" />
+              <xs:element name="VALUE" msprop:Generator_ColumnVarNameInTable="columnVALUE" msprop:Generator_ColumnPropNameInRow="VALUE" msprop:Generator_ColumnPropNameInTable="VALUEColumn" msprop:Generator_UserColumnName="VALUE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

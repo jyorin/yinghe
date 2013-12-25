@@ -1,0 +1,286 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="BestFitMaxRowCount">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="FocusRectStyle">RowFocus</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="GroupPanelText" />
+  <property name="PreviewFieldName" />
+  <property name="VertScrollTipFieldName" />
+  <property name="LevelIndent">-1</property>
+  <property name="GroupFooterShowMode">VisibleIfExpanded</property>
+  <property name="NewItemRowText" />
+  <property name="SynchronizeClones">true</property>
+  <property name="BorderStyle">Default</property>
+  <property name="ViewCaption" />
+  <property name="DetailHeight">350</property>
+  <property name="Name">_gridView</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="3">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="FieldName">ID</property>
+      <property name="Name">gridColumn1</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="Caption">ID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">0</property>
+      <property name="FieldName">变送器型号</property>
+      <property name="Name">gridColumn2</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="Caption">变送器型号</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">1</property>
+      <property name="FieldName">变送器编号</property>
+      <property name="Name">gridColumn3</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="Caption">变送器编号</property>
+    </property>
+  </property>
+  <property name="ShowButtonMode">ShowForFocusedCell</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="ChildGridLevelName" />
+  <property name="FixedLineWidth">2</property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowHorizontalLines">True</property>
+    <property name="ShowVerticalLines">True</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="EnableAppearanceEvenRow">true</property>
+    <property name="ShowIndicator">false</property>
+    <property name="EnableAppearanceOddRow">true</property>
+  </property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="Appearance" isnull="true" iskey="true">
+    <property name="Empty" iskey="true" value="Empty">
+      <property name="BackColor">White</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+    </property>
+    <property name="HideSelectionRow" iskey="true" value="HideSelectionRow">
+      <property name="BackColor">106, 153, 228</property>
+      <property name="ForeColor">208, 224, 251</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="HeaderPanel" iskey="true" value="HeaderPanel">
+      <property name="BackColor2">132, 171, 228</property>
+      <property name="BackColor">221, 236, 254</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">221, 236, 254</property>
+      <property name="GradientMode">Vertical</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="EvenRow" iskey="true" value="EvenRow">
+      <property name="BackColor">231, 242, 254</property>
+      <property name="ForeColor">Black</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="FilterCloseButton" iskey="true" value="FilterCloseButton">
+      <property name="BackColor2">132, 171, 228</property>
+      <property name="BackColor">221, 236, 254</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">221, 236, 254</property>
+      <property name="GradientMode">Vertical</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="FocusedRow" iskey="true" value="FocusedRow">
+      <property name="BackColor">49, 106, 197</property>
+      <property name="ForeColor">White</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="RowSeparator" iskey="true" value="RowSeparator">
+      <property name="BackColor">White</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+    </property>
+    <property name="OddRow" iskey="true" value="OddRow">
+      <property name="BackColor">White</property>
+      <property name="ForeColor">Black</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="GroupFooter" iskey="true" value="GroupFooter">
+      <property name="BackColor">193, 216, 247</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">193, 216, 247</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="Row" iskey="true" value="Row">
+      <property name="BackColor">White</property>
+      <property name="ForeColor">Black</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="SelectedRow" iskey="true" value="SelectedRow">
+      <property name="BackColor">69, 126, 217</property>
+      <property name="ForeColor">White</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="ColumnFilterButtonActive" iskey="true" value="ColumnFilterButtonActive">
+      <property name="BackColor2">154, 190, 243</property>
+      <property name="BackColor">247, 251, 255</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">247, 251, 255</property>
+      <property name="GradientMode">Vertical</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="GroupPanel" iskey="true" value="GroupPanel">
+      <property name="BackColor">62, 109, 185</property>
+      <property name="ForeColor">221, 236, 254</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="VertLine" iskey="true" value="VertLine">
+      <property name="BackColor">99, 127, 196</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+    </property>
+    <property name="ColumnFilterButton" iskey="true" value="ColumnFilterButton">
+      <property name="BackColor2">132, 171, 228</property>
+      <property name="BackColor">221, 236, 254</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">221, 236, 254</property>
+      <property name="GradientMode">Vertical</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="GroupButton" iskey="true" value="GroupButton">
+      <property name="BackColor">193, 216, 247</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">193, 216, 247</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="FocusedCell" iskey="true" value="FocusedCell">
+      <property name="BackColor">White</property>
+      <property name="ForeColor">Black</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="GroupRow" iskey="true" value="GroupRow">
+      <property name="Font">Tahoma, 8pt, style=Bold</property>
+      <property name="BackColor">193, 216, 247</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">193, 216, 247</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseFont">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="FilterPanel" iskey="true" value="FilterPanel">
+      <property name="BackColor">62, 109, 185</property>
+      <property name="ForeColor">White</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="Preview" iskey="true" value="Preview">
+      <property name="BackColor">249, 252, 255</property>
+      <property name="ForeColor">88, 129, 185</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+      </property>
+    </property>
+    <property name="HorzLine" iskey="true" value="HorzLine">
+      <property name="BackColor">99, 127, 196</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+    </property>
+    <property name="FooterPanel" iskey="true" value="FooterPanel">
+      <property name="BackColor2">132, 171, 228</property>
+      <property name="BackColor">221, 236, 254</property>
+      <property name="ForeColor">Black</property>
+      <property name="BorderColor">221, 236, 254</property>
+      <property name="GradientMode">Vertical</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+        <property name="UseForeColor">true</property>
+        <property name="UseBorderColor">true</property>
+      </property>
+    </property>
+    <property name="FixedLine" iskey="true" value="FixedLine">
+      <property name="BackColor">59, 97, 156</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+    </property>
+  </property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">-1</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

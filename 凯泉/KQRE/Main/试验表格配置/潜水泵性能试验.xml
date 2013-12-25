@@ -1,0 +1,295 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="PreviewIndent">-1</property>
+  <property name="LevelIndent">-1</property>
+  <property name="GroupFooterShowMode">VisibleIfExpanded</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="BestFitMaxRowCount">-1</property>
+  <property name="NewItemRowText" />
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="RowHeight">-1</property>
+  <property name="ChildGridLevelName" />
+  <property name="GroupPanelText" />
+  <property name="PreviewFieldName" />
+  <property name="VertScrollTipFieldName" />
+  <property name="BorderStyle">Default</property>
+  <property name="ViewCaption" />
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailHeight">350</property>
+  <property name="Name">bandedGridView1</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="ShowButtonMode">ShowForFocusedCell</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="OptionsSelection" isnull="true" iskey="true">
+    <property name="EnableAppearanceFocusedCell">false</property>
+  </property>
+  <property name="BandPanelRowHeight">-1</property>
+  <property name="MinBandPanelRowCount">1</property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowGroupPanel">false</property>
+    <property name="EnableAppearanceEvenRow">true</property>
+    <property name="EnableAppearanceOddRow">true</property>
+  </property>
+  <property name="OptionsCustomization" isnull="true" iskey="true">
+    <property name="AllowChangeColumnParent">true</property>
+  </property>
+  <property name="Columns" iskey="true" value="16">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">序号</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">1</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">序号</property>
+      <property name="Name">bandedGridColumn14</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">流量</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">2</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">流量(m3/h)</property>
+      <property name="Name">bandedGridColumn15</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">扬程</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">3</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">扬程(m)</property>
+      <property name="Name">bandedGridColumn21</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">输入功率</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">4</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">输入功率(kW)</property>
+      <property name="Name">bandedGridColumn16</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">转速</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">5</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">转速(r/min)</property>
+      <property name="Name">bandedGridColumn17</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">轴功率</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">8</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">轴功率(kW)</property>
+      <property name="Name">bandedGridColumn18</property>
+    </property>
+	<property name="Item7" isnull="true" iskey="true">
+		  <property name="Visible">true</property>
+		  <property name="ColumnEditName" />
+		  <property name="FieldName">出口压力</property>
+		  <property name="Fixed">None</property>
+		  <property name="VisibleIndex">11</property>
+		  <property name="OptionsColumn" isnull="true" iskey="true">
+			  <property name="AllowSort">False</property>
+			  <property name="AllowMove">false</property>
+		  </property>
+		  <property name="Caption">出口压力(MPa)</property>
+		  <property name="Name">bandedGridColumn5</property>
+	  </property>  
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">额定转速下_流量</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">9</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">流量(m3/h)</property>
+      <property name="Name">bandedGridColumn22</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">额定转速下_扬程</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">10</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">扬程(m)</property>
+      <property name="Name">bandedGridColumn23</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">额定转速下_轴功率</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">12</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">轴功率(kW)</property>
+      <property name="Name">bandedGridColumn24</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">额定转速下_泵效率</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">13</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">泵效率(%)</property>
+      <property name="Name">bandedGridColumn25</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">额定转速下_机组效率</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">14</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">机组效率(%)</property>
+      <property name="Name">bandedGridColumn26</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">电压</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">6</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">电压(V)</property>
+      <property name="Name">bandedGridColumn1</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">电流</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">7</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">电流(A)</property>
+      <property name="Name">bandedGridColumn2</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">时间值</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">0</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowSort">False</property>
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">时间</property>
+      <property name="Name">bandedGridColumn3</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="ColumnEditName" />
+      <property name="FieldName">id</property>
+      <property name="Fixed">None</property>
+      <property name="VisibleIndex">-1</property>
+      <property name="Caption">ID</property>
+      <property name="Name">bandedGridColumn4</property>
+    </property>
+  </property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="FixedLineWidth">2</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="Bands" iskey="true" value="2">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Columns" iskey="true" value="11">
+        <property name="Item1">bandedGridColumn4</property>
+        <property name="Item2">bandedGridColumn3</property>
+        <property name="Item3">bandedGridColumn14</property>
+        <property name="Item4">bandedGridColumn15</property>
+        <property name="Item5">bandedGridColumn21</property>
+        <property name="Item6">bandedGridColumn16</property>
+        <property name="Item7">bandedGridColumn17</property>
+        <property name="Item8">bandedGridColumn1</property>
+        <property name="Item9">bandedGridColumn2</property>
+        <property name="Item10">bandedGridColumn18</property>
+		<property name="Item11">bandedGridColumn5</property>
+      </property>
+      <property name="Name">gridBand3</property>
+      <property name="Caption">实测转速下数据</property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="OptionsBand" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Width">675</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Columns" iskey="true" value="5">
+        <property name="Item1">bandedGridColumn22</property>
+        <property name="Item2">bandedGridColumn23</property>
+        <property name="Item3">bandedGridColumn24</property>
+        <property name="Item4">bandedGridColumn25</property>
+        <property name="Item5">bandedGridColumn26</property>
+      </property>
+      <property name="Name">gridBand4</property>
+      <property name="Caption">额定转速下数据</property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="Width">375</property>
+    </property>
+  </property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="ActiveFilterString" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>
